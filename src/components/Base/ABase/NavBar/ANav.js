@@ -39,7 +39,7 @@ const history=useHistory()
                             Home
                         </li>
                         
-                       <li>
+                       <li onClick={()=>{history.push("/admin-charts")}}>
                            Charts
                         </li>
                         
@@ -67,7 +67,8 @@ const history=useHistory()
             >Home</Dropdown.Item>
               
 
-            <Dropdown.Item eventKey="2">Charts</Dropdown.Item>
+            <Dropdown.Item eventKey="2"
+             onClick={()=>{history.push("/admin-charts")}}>Charts</Dropdown.Item>
             
             <Dropdown.Item eventKey="4" onClick={()=>handleLogOut()}
              >LogOut</Dropdown.Item>
