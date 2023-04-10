@@ -1,0 +1,99 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.history{
+    min-height:90vh;
+    margin-top: 5rem;
+}
+
+.history-name{
+    font-size: 1rem;
+    color: rgb(50, 13, 85);
+    font-weight: bold;
+}
+.history-date{
+    font-size: 1rem;
+  margin-left: 17rem;
+  color: rgb(50, 13, 85);
+}
+.accordion-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.accordion{
+    margin-top: 1rem;
+}
+
+.history-head3{
+    margin-top: 1rem;
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+
+
+.history-delete-icon{
+    margin-left: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
+@media only screen and (max-width:1200px) {
+
+    .history-date{
+  margin-left: 10rem;
+ 
+}
+.history-delete-icon{
+    margin-left: 100%;
+    
+}
+
+}
+
+@media only screen and (max-width:950px) {
+
+    .history-date{
+  margin-left: 5.5rem;
+ 
+}
+
+.history-delete-icon{
+    margin-left: 80%;
+    
+}
+.history-name{
+    font-size:0.8rem;
+    
+}
+.history-date{
+    font-size: 0.8rem;
+ 
+}
+}
+
+@media only screen and (max-width:600px) {
+
+    .history-date{
+  margin-left: 3rem;
+ 
+}
+
+.history-delete-icon{
+    margin-left: 50%;
+    
+}
+.history-name{
+    font-size: 0.6rem;
+    
+}
+.history-date{
+    font-size: 0.6rem;
+ 
+}
+}

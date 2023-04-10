@@ -1,0 +1,189 @@
+
+body{
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+  }
+  .signUpPage-admin{
+    padding-top: 4.5rem;
+    min-height: 95vh;
+  }
+  .title-signup-admin{
+    color:  gold;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .form-signup-admin {
+      align-items: center;
+      border: 5px solid rgba(249, 247, 247, 0.498);
+      margin: auto;
+      padding: 0.5rem 2rem;
+      background-color: rgba(189, 153, 217, 0.183);
+      box-shadow: 0.5rem 0.5rem 0.5rem black;
+      border-radius: 1rem;
+      border: 3px solid white;
+      box-shadow: 0.2rem 0.2rem 1rem gold;
+      width: 40%;
+      height: 60%;
+      border-radius: 10px;
+    }
+  
+  form{
+      padding: 5px;
+  }
+  div{
+      padding: 5px;
+  }
+  h1{
+      text-align: center;
+      color: silver;
+      margin-top: -1rem;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .textlabel{
+      display: block;
+      font-size: 18px;
+  }
+  .input-signUp-admin{
+      width:90% ;
+      font-size: 15px;
+      border-radius: 5px;
+      padding: 5px 5px;
+      box-sizing: border-box;
+      box-shadow: 3px 3px 3px rgb(255, 255, 253);
+      margin: 5px 0px 2px;
+  } 
+  input:focus{
+      background-color: aqua;
+  }
+  
+  .btn{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color:  rgb(191, 194, 92);
+      color: whitesmoke;
+  }
+  
+  
+  button{
+      background-color: rgb(131, 45, 45);
+      color: antiquewhite;
+      font-size: 20px;
+      border-radius: 10px;
+      padding: 5px 5px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 1rem;
+  }
+  .input2{
+    display: inline-block;
+    width: 45%;
+  }
+  .input1{
+    display: inline-block;
+    width: 45%;
+  }
+  
+  .sup-login{
+    color:rgb(191, 194, 92);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .sup-login:hover{
+    color:rgb(186, 53, 53);
+    font-size: 1.2rem;
+  }
+  .foot-signin-admin{
+    margin-top: 2rem;
+  }
+  
+  @media screen and (max-width: 902px) {
+    
+    .title-signup-admin{
+        color: gold;
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+      .signup-title-2-admin{
+        font-size: 1.2rem;
+        margin: 1rem;
+      }
+      .form-signup-admin {
+          align-items: center;
+          border: 5px solid rgba(249, 247, 247, 0.498);
+          margin: auto;
+          padding: 1rem 2rem;
+          background-color: rgba(189, 153, 217, 0.183);
+          box-shadow: 0.5rem 0.5rem 0.5rem black;
+          border-radius: 1rem;
+          border: 3px solid white;
+          box-shadow: 2px 2px 2px whitesmoke;
+          width: 60%;
+          height: 60%;
+          border-radius: 10px;
+          border: 5px solid rgba(249, 247, 247, 0.498);
+          box-shadow: 0.5rem 0.5rem 0.5rem black;
+        }
+        
+
+        .input-signUp-admin{
+            width:80% ;
+            font-size:15px;
+            border-radius: 5px;
+            padding: 3px 5px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 3px;
+            margin: 2px 0px 0px;
+        } 
+   
+       
+        .foot-signin-admin{
+          margin-top: 1rem;
+        }
+  }
+  
+
+  
+  @media screen and (max-width: 550px) {
+    
+    .title-signup-admin{
+        color: gold;
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+      .form-signup-admin {
+          align-items: center;
+          border: 5px solid rgba(249, 247, 247, 0.498);
+          margin: auto;
+          padding: 1rem 2rem;
+          background-color: rgba(189, 153, 217, 0.183);
+          box-shadow: 0.5rem 0.5rem 0.5rem black;
+          border-radius: 1rem;
+          border: 3px solid white;
+          box-shadow: 2px 2px 2px whitesmoke;
+          width: 80%;
+          height: 60%;
+          border-radius: 10px;
+          border: 5px solid rgba(249, 247, 247, 0.498);
+          box-shadow: 0.5rem 0.5rem 0.5rem black;
+          margin-top: 1rem;
+        }
+        .signup-title-2-admin{
+          font-size: 1rem;
+          margin: 0.2rem;
+        }
+        .input-signUp-admin{
+          width:90% ;
+          font-size:15px;
+          border-radius: 5px;
+          padding: 3px 5px;
+          box-sizing: border-box;
+          box-shadow: 3px 3px 3px;
+          margin: 2px 0px 0px;
+      } 
+     
+      .foot-signin-admin{
+        margin-top: 0.6rem;
+      }
+  }
+  

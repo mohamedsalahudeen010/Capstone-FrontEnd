@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+.container{
+    margin-top: 2rem;
+    padding-top: 3rem;
+    color: gold;   
+}
+.landingPage{
+    min-height: 100vh;
+    color: gold;    
+   
+}
+.form-div{
+    display: flex;
+   
+    align-content: center;
+    justify-content: center;
+}
+.land-form{
+    margin-top: 2rem;
+    border: 4px solid white;
+    border-radius: 1rem;
+    width: 40%;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 2rem 2rem;
+    box-shadow: 0.2rem 0.2rem 1rem gold;
+}
+
+.land-scroll-label{
+    font-size: 1rem;
+}
+.land-date-label{
+    font-size: 1rem;
+}
+
+.land-scroll-btn{
+    width: 80%;
+    height: 2rem;
+    }
+
+.land-date{
+width: 80%;
+height: 2rem;
+}
+
+.land-btn{  
+    text-align: center;
+    padding: 0.3rem 2rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    align-content: center;
+    
+}
+.land-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color:  gold;
+}
+.land-heading1{
+    font-size: 2rem;
+    color: silver;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.land-display{
+    color: gold;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.land-price{
+    color:  gold;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+@media screen and (max-width: 902px) {
+    .land-heading{
+        font-size: 2rem;
+    
+    }
+    .land-heading1{
+        font-size: 1.5rem; 
+        margin-top: 1rem;
+    }
+    .land-form{
+        margin-top: 2rem;
+        border: 4px solid white;
+        border-radius: 1rem;
+        width: 80%;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 2rem 2rem;
+        box-shadow: 0.2rem 0.2rem 1rem gold;
+    }
+  }
+  
+
+  
+  @media screen and (max-width: 550px) {
+    
+    .land-heading{
+        font-size: 1.5rem;
+    
+    }
+    .land-heading1{
+        font-size: 0.8rem; 
+        margin-top: 0.5rem;
+    }
+    .land-form{
+        margin-top: 2rem;
+        border: 4px solid white;
+        border-radius: 1rem;
+        width: 80%;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 2rem 2rem;
+        box-shadow: 0.2rem 0.2rem 1rem gold;
+    }
+  }
+  
+
+ 
+ 

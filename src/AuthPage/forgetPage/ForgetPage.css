@@ -1,0 +1,27 @@
+.forgetPage{
+    min-height: 95vh;
+}
+.title-forget{
+    margin-top: 5rem;
+    color:  gold;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.form-forget{
+    margin: auto;
+    margin-top: 3rem;
+    align-items: center;
+    border: 5px solid rgba(249, 247, 247, 0.498);
+    
+    padding: 1rem 2rem;
+    background-color: rgba(189, 153, 217, 0.183);
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    border-radius: 1rem;
+    border: 3px solid white;
+    box-shadow: 2px 2px 2px whitesmoke;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    border: 5px solid rgba(249, 247, 247, 0.498);
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+}

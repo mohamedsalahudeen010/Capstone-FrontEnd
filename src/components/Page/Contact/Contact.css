@@ -1,0 +1,298 @@
+.contact{
+    min-height: 95vh;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+}
+.contact-left>span:nth-of-type(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+    
+}
+
+.contact-left>span:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(24, 236, 31);
+    
+}
+.contact-right{
+   display: flex;
+   flex-direction:column ;
+    text-align: left;
+   
+}
+.contact-name{
+    margin-top: 2rem;
+    
+}
+.contact-name{
+    width: 50%;
+    height: 3rem;
+    border: 5px solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+    color: black;
+}
+.contact-email{
+    margin-top: 2rem;
+}
+
+.contact-email{
+    width: 50%;
+    height: 3rem;
+    border: 5px solid;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+    
+}
+.contact-textbox{
+    margin-top: 2rem;
+}
+.contact-textbox{
+    width: 50%;
+    height: 3rem !important;
+    border: 5px solid;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+    
+}
+
+.contact-btn{
+    width: 8rem;
+    height: 3rem;
+   margin-top: 1rem;
+}
+
+.contact-alert-main{
+    margin-top: 2rem;
+}
+
+.contact-alert{
+    background-color: rgb(228, 77, 22);
+    color: whitesmoke;
+    padding: 0.2rem 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.contact-success{
+    background-color: rgb(77, 228, 22);
+    color: whitesmoke;
+    padding: 0.2rem 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+
+@media only screen and (max-width:1200px){
+    .contact{
+        min-height: 30vh;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        padding-top: 7rem;
+    }
+    
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left>span:nth-of-type(1){
+        font-size: 3.8rem;
+        font-weight: bold;
+        color: orange;
+        
+    }
+    
+    .contact-left>span:nth-of-type(2){
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: rgb(24, 236, 31);
+        
+    }
+    .contact-right{
+       display: flex;
+       flex-direction:column ;
+        text-align: center;
+    }
+    .contact-name{
+        margin-top: 2rem;
+        
+    }
+    .contact-name{
+        width: 50%;
+        height: 3rem;
+        border: 5px solid;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        color: black;
+    }
+    .contact-email{
+        margin-top: 2rem;
+    }
+    
+    .contact-email{
+        width: 50%;
+        height: 3rem;
+        border: 5px solid;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        
+    }
+    .contact-textbox{
+        margin-top: 2rem;
+    }
+    .contact-textbox{
+        width: 50%;
+        height: 3rem !important;
+        border: 5px solid;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        
+    }
+    
+    .contact-btn{
+        width: 8rem;
+        height: 3rem;
+       margin-top: 1rem;
+    }
+    
+    .contact-alert-main{
+        margin-top: 2rem;
+    }
+    
+    .contact-alert{
+        background-color: rgb(228, 77, 22);
+        color: whitesmoke;
+        padding: 0.2rem 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 0.5rem 0.5rem 0.5rem black;
+    }
+    
+    .contact-success{
+        background-color: rgb(77, 228, 22);
+        color: whitesmoke;
+        padding: 0.2rem 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 0.5rem 0.5rem 0.5rem black;
+    }
+}
+
+
+
+@media only screen and (max-width:850px){
+    .contact{
+        min-height: 30vh;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left>span:nth-of-type(1){
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: orange;
+        
+    }
+    
+    .contact-left>span:nth-of-type(2){
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgb(24, 236, 31);
+        
+    }
+    .contact-right{
+       display: flex;
+       flex-direction:column ;
+        text-align: center;
+    }
+    .contact-name{
+        margin-top: 2rem;
+        
+    }
+    .contact-name{
+        width: 50%;
+        height: 3rem;
+        border: 5px solid;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        color: black;
+    }
+    .contact-email{
+        margin-top: 2rem;
+    }
+    
+    .contact-email{
+        width: 50%;
+        height: 3rem;
+        border: 5px solid;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        
+    }
+    .contact-textbox{
+        margin-top: 2rem;
+    }
+    .contact-textbox{
+        width: 50%;
+        height: 3rem !important;
+        border: 5px solid;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        border-color: aqua aqua rgb(230, 122, 21) rgb(230, 122, 21);
+        
+    }
+    
+    .contact-btn{
+        width: 8rem;
+        height: 3rem;
+       margin-top: 1rem;
+    }
+    
+    .contact-alert-main{
+        margin-top: 2rem;
+    }
+    
+    .contact-alert{
+        background-color: rgb(228, 77, 22);
+        color: whitesmoke;
+        padding: 0.2rem 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 0.5rem 0.5rem 0.5rem black;
+    }
+    
+    .contact-success{
+        background-color: rgb(77, 228, 22);
+        color: whitesmoke;
+        padding: 0.2rem 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 0.5rem 0.5rem 0.5rem black;
+    }
+}
