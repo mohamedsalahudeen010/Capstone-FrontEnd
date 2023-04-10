@@ -42,7 +42,7 @@ const AdminLogInPage = ({admin,setAdmin}) => {
         setAdmin(data.user)
         localStorage.setItem("email-admin",data.user.email);
         localStorage.setItem("name-admin",data.user.firstname);
-        localStorage.setItem("token-admin",data.token);
+        localStorage.setItem("token",data.token);
         history.push("/admin");
       } else if(data.message === "invalid credentials password"){
         setShowPassword(true);
