@@ -62,7 +62,7 @@ function AdminPage() {
           body:JSON.stringify(goldData),
           headers: {
             "Content-Type": "application/json",
-            "x-auth-token":localStorage.getItem("token-admin")
+            "x-auth-token":localStorage.getItem("token")
           },
       })
       const enteredData=await response.json()
