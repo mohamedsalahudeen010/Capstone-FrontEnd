@@ -16,6 +16,7 @@ import Contact from './components/Page/Contact/Contact';
 import Chart from './components/Page/Chart/Chart';
 import History from './components/Page/histrory/History';
 import ForgetPage from './AuthPage/forgetPage/ForgetPage';
+import AdminChart from './components/Page/Chart/AChart';
 
 
 
@@ -75,7 +76,7 @@ function App() {
      <Chart></Chart>
         </Route>
 
-<Route path="/admin-charts">
+        <Route path="/admin-charts">
      <AdminChart></AdminChart>
         </Route>
 
