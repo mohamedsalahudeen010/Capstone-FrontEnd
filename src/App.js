@@ -75,6 +75,10 @@ function App() {
      <Chart></Chart>
         </Route>
 
+<Route path="/admin-charts">
+     <AdminChart></AdminChart>
+        </Route>
+
       </Switch>
     </div>
   );
