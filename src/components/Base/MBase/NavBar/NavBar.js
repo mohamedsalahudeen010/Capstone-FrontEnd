@@ -25,10 +25,10 @@ const history=useHistory()
             onClick={()=>history.push("/main")}>
             Indian Gold Vault
             </div>
-            <div className='nav-name'
+            <div className='nav-name1'
             >
-            <span style={{fontSize:"1.5rem", color:"silver"}}>Hello </span> 
-            <span style={{fontSize:"1.2rem", color:"gold"}}>{localStorage.getItem("name")} !</span> 
+            <span style={{ color:"silver"}}>Hello </span> 
+            <span style={{ color:"gold"}}>{localStorage.getItem("name")} !</span> 
             </div> 
           
         </div>
