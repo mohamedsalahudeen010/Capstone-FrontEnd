@@ -25,10 +25,10 @@ const history=useHistory()
             onClick={()=>history.push("/admin")}>
             Indian Gold Vault
             </div>
-            <div className='nav-name'
+            <div className='nav-name1'
             >
-            <span style={{fontSize:"1.5rem", color:"silver"}}>Hello </span> 
-            <span style={{fontSize:"1.2rem", color:"gold"}}>{localStorage.getItem("name-admin")} !</span> 
+            <span style={{ color:"silver"}}>Hello </span> 
+            <span style={{ color:"gold"}}>{localStorage.getItem("name-admin")} !</span> 
             </div> 
           
         </div>
@@ -39,7 +39,8 @@ const history=useHistory()
                             Home
                         </li>
                         
-                       <li onClick={()=>{history.push("/admin-charts")}}>
+                       <li
+                       onClick={()=>{history.push("/admin-charts")}}>
                            Charts
                         </li>
                         
@@ -68,7 +69,7 @@ const history=useHistory()
               
 
             <Dropdown.Item eventKey="2"
-             onClick={()=>{history.push("/admin-charts")}}>Charts</Dropdown.Item>
+            onClick={()=>{history.push("/admin-charts")}}>Charts</Dropdown.Item>
             
             <Dropdown.Item eventKey="4" onClick={()=>handleLogOut()}
              >LogOut</Dropdown.Item>
