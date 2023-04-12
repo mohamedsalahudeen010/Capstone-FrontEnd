@@ -96,5 +96,5 @@ function Contact() {
     </MainBase>
   )
 }
-
+ 
 export default Contact
