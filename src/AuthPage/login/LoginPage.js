@@ -72,6 +72,9 @@ const LogInPage = ({user,setUser}) => {
         <div>
         <h2 className="signIn-title">User SignIn Page</h2>
           <form onSubmit={handleSubmit} className="form-signIn">
+    <div><span>userId : user123@gmail.com</span> || 
+            
+            <span>password :user12345</span></div>
           <div className="input-div">
                 <label class="textlabel" for="email">Email</label>
               <input
