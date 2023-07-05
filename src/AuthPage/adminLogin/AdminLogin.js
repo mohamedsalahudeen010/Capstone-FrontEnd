@@ -72,6 +72,9 @@ const AdminLogInPage = ({admin,setAdmin}) => {
         <div>
         <h2 className="signIn-title-admin">Admin SignIn Page</h2>
           <form onSubmit={handleSubmit} className="form-signIn-admin">
+    <div><span>AdminId : admin123@gmail.com</span> || 
+            
+            <span>password : admin12345</span></div>
           <div className="input-div-admin">
                 <label className="textlabel" for="email">Email</label>
               <input
