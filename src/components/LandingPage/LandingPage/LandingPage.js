@@ -22,6 +22,7 @@ function LandingPage() {
   const [metal1, setMetal1] = useState("XAU");
   const [date, setDate] = useState(currentDate);
   const [content1, setContent1] = useState(false);
+  const [content12, setContent12] = useState(false);
   const [data1, setData1] = useState();
   // <<<<<<<<<<<<<<<<<<<<<<FORM 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   const [noOfCurrency, setNoOfCurrency] = useState(1);
@@ -65,7 +66,6 @@ function LandingPage() {
     console.log(date);
     try {
       const response = await fetch(
-        // `https://www.goldapi.io/api/XAU/${currency}/${date}`,
         `https://www.goldapi.io/api/${metal1}/USD/${date}`,
         {
           method: "GET",
@@ -76,13 +76,18 @@ function LandingPage() {
         }
       );
       const rate = await response.json();
-      if (rate.error === "No data available for this date or pair.") {
+      if (rate.error === "Monthly API quota exceeded. Add billing details to upgrade to Unlimited reqs/month plan.") {
+        setContent12(true);
+      } 
+      else if (rate.error === "No data available for this date or pair.") {
         setContent1(true);
       } else {
         setContent1(false);
+        setContent12(false);
       }
      
       setData1(rate);
+      console.log(rate)
     } catch (error) {
       console.log(error);
     }
@@ -299,7 +304,7 @@ function LandingPage() {
             </div>
           </form>
        
-        {data1 && !content1 && (
+        {data1 && !content1 && !content12 && (
           <div className="land-display col">
             <h1>Gold Rate</h1>
 
@@ -321,6 +326,13 @@ function LandingPage() {
           <div className="land-content-disp">
             <p>
               Data is Not available for Selected date, please change the date
+            </p>
+          </div>
+        )}
+         {content12 && (
+          <div className="land-content-disp">
+            <p>
+            You have Exceeded the monthly limit for Requests on your current plan
             </p>
           </div>
         )}
