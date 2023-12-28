@@ -303,10 +303,9 @@ function LandingPage() {
           <div className="land-display col">
             <h1>Gold Rate</h1>
 
-            <h3 className="land-price">
-              {" "}
-              22k Gold Price : {data1.price_gram_22k} {data1.currency} /-
-            </h3>
+            
+            <h6 className="main-price">{data1 && data1.metal==="XAU"?`Gold Price : ${data1.price_gram_22k }  ${data1.currency} for 1 gram Gold`:
+              `Silver Price : ${data1.price_gram_22k }  ${data1.currency} for 1 gram Silver`}  </h6>
             <p>To Get More Details SignUp Here </p>
             <button
               onClick={() => {
