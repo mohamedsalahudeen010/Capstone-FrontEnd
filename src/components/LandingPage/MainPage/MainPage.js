@@ -23,6 +23,7 @@ function MainPage() {
   const [metal1, setMetal1] = useState("XAU");
   const [date, setDate] = useState(currentDate);
   const [content1, setContent1] = useState(false);
+  const [content12, setContent12] = useState(false);
   const [data1, setData1] = useState();
   // <<<<<<<<<<<<<<<<<<<<<<FORM 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   const [noOfCurrency, setNoOfCurrency] = useState(1);
@@ -65,7 +66,6 @@ function MainPage() {
     console.log(date);
     try {
       const response = await fetch(
-        // `https://www.goldapi.io/api/XAU/${currency}/${date}`,
         `https://www.goldapi.io/api/${metal1}/USD/${date}`,
         {
           method: "GET",
@@ -76,10 +76,14 @@ function MainPage() {
         }
       );
       const rate = await response.json();
-      if (rate.error === "No data available for this date or pair.") {
+      if (rate.error === "Monthly API quota exceeded. Add billing details to upgrade to Unlimited reqs/month plan.") {
+        setContent12(true);
+      } 
+      else if (rate.error === "No data available for this date or pair.") {
         setContent1(true);
       } else {
         setContent1(false);
+        setContent12(false);
       }
      
       setData1(rate);
@@ -327,8 +331,6 @@ function MainPage() {
           <div className="land-display col">
             <h1>Gold Rate</h1>
 
-            <h3 className="land-price">
-              {" "}
               <h6 className="main-price">{data1 && data1.metal==="XAU"?`18k Gold Price : ${data1.price_gram_18k }  ${data1.currency} for 1 gram Gold`:
               `18k Silver Price : ${data1.price_gram_18k }  ${data1.currency} for 1 gram Silver`}  </h6>
                <h6 className="main-price">{data1 && data1.metal==="XAU"?`20k Gold Price : ${data1.price_gram_20k }  ${data1.currency} for 1 gram Gold`:
@@ -339,13 +341,20 @@ function MainPage() {
               `22k Silver Price : ${data1.price_gram_22k }  ${data1.currency} for 1 gram Silver`}  </h6>
                <h6 className="main-price">{data1 && data1.metal==="XAU"?`24k Gold Price : ${data1.price_gram_24k }  ${data1.currency} for 1 gram Gold`:
               `24k Silver Price : ${data1.price_gram_24k }  ${data1.currency} for 1 gram Silver`}  </h6>
-           </h3>
+          
           </div>
         )}
         {content1 && (
           <div className="land-content-disp">
             <p>
               Data is Not available for Selected date, please change the date
+            </p>
+          </div>
+        )}
+         {content12 && (
+          <div className="land-content-disp">
+            <p>
+            You have Exceeded the monthly limit for Requests on your current plan
             </p>
           </div>
         )}
